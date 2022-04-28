@@ -1,0 +1,16 @@
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.csprojAssemblyReference.cache
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.Properties.Resources.resources
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.csproj.GenerateResource.cache
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.csproj.CoreCompileInputs.cache
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\bin\Debug\SSISH.exe.config
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\bin\Debug\SSISH.exe
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\bin\Debug\SSISH.pdb
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.Vistas.sis_login.resources
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.exe
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.pdb
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.Vistas.sis_principal.resources
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.Vistas.far_nodispensadas.resources
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\bin\Debug\MetroFramework.dll
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Sid280\Desktop\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.csproj.CopyComplete
