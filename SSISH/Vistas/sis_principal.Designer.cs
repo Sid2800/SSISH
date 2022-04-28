@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.P_menu = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.BT_farmacia = new System.Windows.Forms.Button();
+            this.PB_menu = new System.Windows.Forms.PictureBox();
             this.BT_salir = new System.Windows.Forms.Button();
             this.PB_logo = new System.Windows.Forms.PictureBox();
-            this.PB_menu = new System.Windows.Forms.PictureBox();
             this.P_farmacia = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.Usuario = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.LB_nombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.LB_nombre = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.P_menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_menu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_logo)).BeginInit();
             this.P_farmacia.SuspendLayout();
             this.Usuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -62,6 +62,29 @@
             this.P_menu.Size = new System.Drawing.Size(158, 666);
             this.P_menu.TabIndex = 1;
             this.P_menu.MouseEnter += new System.EventHandler(this.P_menu_MouseEnter);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Teal;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Info;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(113)))), ((int)(((byte)(69)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Image = global::SSISH.Properties.Resources.horario;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 204);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(158, 38);
+            this.button2.TabIndex = 41;
+            this.button2.Text = "Admision";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // BT_farmacia
             // 
@@ -87,6 +110,17 @@
             this.BT_farmacia.UseVisualStyleBackColor = false;
             this.BT_farmacia.MouseEnter += new System.EventHandler(this.BT_farmacia_MouseEnter);
             this.BT_farmacia.MouseLeave += new System.EventHandler(this.BT_farmacia_MouseLeave);
+            // 
+            // PB_menu
+            // 
+            this.PB_menu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PB_menu.Image = global::SSISH.Properties.Resources.menu_onn;
+            this.PB_menu.Location = new System.Drawing.Point(3, 0);
+            this.PB_menu.Name = "PB_menu";
+            this.PB_menu.Size = new System.Drawing.Size(41, 39);
+            this.PB_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_menu.TabIndex = 1;
+            this.PB_menu.TabStop = false;
             // 
             // BT_salir
             // 
@@ -120,17 +154,7 @@
             this.PB_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_logo.TabIndex = 2;
             this.PB_logo.TabStop = false;
-            // 
-            // PB_menu
-            // 
-            this.PB_menu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PB_menu.Image = global::SSISH.Properties.Resources.menu_onn;
-            this.PB_menu.Location = new System.Drawing.Point(3, 0);
-            this.PB_menu.Name = "PB_menu";
-            this.PB_menu.Size = new System.Drawing.Size(41, 39);
-            this.PB_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PB_menu.TabIndex = 1;
-            this.PB_menu.TabStop = false;
+            this.PB_logo.Click += new System.EventHandler(this.PB_logo_Click);
             // 
             // P_farmacia
             // 
@@ -167,29 +191,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Info;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(113)))), ((int)(((byte)(69)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = global::SSISH.Properties.Resources.horario;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 38);
-            this.button2.TabIndex = 41;
-            this.button2.Text = "Admision";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // Usuario
             // 
             this.Usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -202,16 +203,16 @@
             this.Usuario.Size = new System.Drawing.Size(232, 69);
             this.Usuario.TabIndex = 4;
             // 
-            // pictureBox2
+            // label1
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::SSISH.Properties.Resources.persona;
-            this.pictureBox2.Location = new System.Drawing.Point(167, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 59);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(5, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 22);
+            this.label1.TabIndex = 111;
+            this.label1.Text = "Uunidad...";
             // 
             // LB_nombre
             // 
@@ -224,16 +225,16 @@
             this.LB_nombre.TabIndex = 110;
             this.LB_nombre.Text = "N_ usuario";
             // 
-            // label1
+            // pictureBox2
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(5, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 22);
-            this.label1.TabIndex = 111;
-            this.label1.Text = "Uunidad...";
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::SSISH.Properties.Resources.persona;
+            this.pictureBox2.Location = new System.Drawing.Point(167, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(57, 59);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // sis_principal
             // 
@@ -248,8 +249,8 @@
             this.Load += new System.EventHandler(this.Sis_principal_Load);
             this.MouseEnter += new System.EventHandler(this.Sis_principal_MouseEnter);
             this.P_menu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PB_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_menu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_logo)).EndInit();
             this.P_farmacia.ResumeLayout(false);
             this.Usuario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

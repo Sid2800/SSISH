@@ -101,6 +101,6 @@ namespace SSISH.Controles
             }
             return desactivado;
         }
-        //////;k;sdlkal;sd
+        
     }
 }

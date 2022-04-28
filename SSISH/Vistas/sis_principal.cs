@@ -63,5 +63,10 @@ namespace SSISH.Vistas
         {
             Limpiar_paneles();
         }
+
+        private void PB_logo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
