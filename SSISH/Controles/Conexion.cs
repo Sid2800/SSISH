@@ -12,9 +12,8 @@ namespace SSISH.Controles
     {
         public SqlConnection CadenaConexionBD()
         {
-            string NombreConexion = "ConexionBIT";
+            string NombreConexion = "ConexionDB";
             SqlConnection sqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings[NombreConexion].ToString());
-
             return sqlCon;
         }
 
