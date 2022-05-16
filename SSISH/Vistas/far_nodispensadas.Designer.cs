@@ -1,6 +1,6 @@
 ﻿namespace SSISH.Vistas
 {
-    partial class far_nodispensadas
+    partial class Far_nodispensadas
     {
         /// <summary>
         /// Required designer variable.

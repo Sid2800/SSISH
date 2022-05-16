@@ -29,28 +29,35 @@
         private void InitializeComponent()
         {
             this.P_menu = new System.Windows.Forms.Panel();
+            this.BT_sistema = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BT_farmacia = new System.Windows.Forms.Button();
             this.PB_menu = new System.Windows.Forms.PictureBox();
             this.BT_salir = new System.Windows.Forms.Button();
             this.PB_logo = new System.Windows.Forms.PictureBox();
-            this.P_farmacia = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.Usuario = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.LB_nombre = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.P_fondo = new System.Windows.Forms.Panel();
+            this.P_sistema = new System.Windows.Forms.FlowLayoutPanel();
+            this.BT_usaurios = new System.Windows.Forms.Button();
+            this.P_farmacia = new System.Windows.Forms.FlowLayoutPanel();
+            this.BT_nodispensado = new System.Windows.Forms.Button();
             this.P_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_logo)).BeginInit();
-            this.P_farmacia.SuspendLayout();
             this.Usuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.P_fondo.SuspendLayout();
+            this.P_sistema.SuspendLayout();
+            this.P_farmacia.SuspendLayout();
             this.SuspendLayout();
             // 
             // P_menu
             // 
             this.P_menu.BackColor = System.Drawing.Color.Teal;
+            this.P_menu.Controls.Add(this.BT_sistema);
             this.P_menu.Controls.Add(this.button2);
             this.P_menu.Controls.Add(this.BT_farmacia);
             this.P_menu.Controls.Add(this.PB_menu);
@@ -62,6 +69,31 @@
             this.P_menu.Size = new System.Drawing.Size(158, 666);
             this.P_menu.TabIndex = 1;
             this.P_menu.MouseEnter += new System.EventHandler(this.P_menu_MouseEnter);
+            // 
+            // BT_sistema
+            // 
+            this.BT_sistema.BackColor = System.Drawing.Color.Teal;
+            this.BT_sistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_sistema.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_sistema.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BT_sistema.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_sistema.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.BT_sistema.FlatAppearance.BorderSize = 0;
+            this.BT_sistema.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Info;
+            this.BT_sistema.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(113)))), ((int)(((byte)(69)))));
+            this.BT_sistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_sistema.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_sistema.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BT_sistema.Image = global::SSISH.Properties.Resources.calculator_24;
+            this.BT_sistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_sistema.Location = new System.Drawing.Point(0, 586);
+            this.BT_sistema.Name = "BT_sistema";
+            this.BT_sistema.Size = new System.Drawing.Size(158, 38);
+            this.BT_sistema.TabIndex = 42;
+            this.BT_sistema.Text = "Sistema";
+            this.BT_sistema.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BT_sistema.UseVisualStyleBackColor = false;
+            this.BT_sistema.MouseEnter += new System.EventHandler(this.BT_sistema_MouseEnter);
             // 
             // button2
             // 
@@ -124,11 +156,11 @@
             // 
             // BT_salir
             // 
-            this.BT_salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BT_salir.BackColor = System.Drawing.Color.Teal;
             this.BT_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BT_salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_salir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BT_salir.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BT_salir.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.BT_salir.FlatAppearance.BorderSize = 0;
             this.BT_salir.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Info;
@@ -136,6 +168,7 @@
             this.BT_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_salir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BT_salir.Image = global::SSISH.Properties.Resources.salir;
             this.BT_salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_salir.Location = new System.Drawing.Point(0, 624);
             this.BT_salir.Name = "BT_salir";
@@ -156,51 +189,16 @@
             this.PB_logo.TabStop = false;
             this.PB_logo.Click += new System.EventHandler(this.PB_logo_Click);
             // 
-            // P_farmacia
-            // 
-            this.P_farmacia.BackColor = System.Drawing.Color.Teal;
-            this.P_farmacia.Controls.Add(this.button1);
-            this.P_farmacia.Location = new System.Drawing.Point(158, 160);
-            this.P_farmacia.Name = "P_farmacia";
-            this.P_farmacia.Size = new System.Drawing.Size(168, 42);
-            this.P_farmacia.TabIndex = 3;
-            this.P_farmacia.Visible = false;
-            this.P_farmacia.MouseEnter += new System.EventHandler(this.P_farmacia_MouseEnter);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Info;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(113)))), ((int)(((byte)(69)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = global::SSISH.Properties.Resources.pharmacist__1_;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 35);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "   NO Dispensado";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Usuario
             // 
-            this.Usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Usuario.BackColor = System.Drawing.Color.Teal;
             this.Usuario.Controls.Add(this.label1);
             this.Usuario.Controls.Add(this.LB_nombre);
             this.Usuario.Controls.Add(this.pictureBox2);
-            this.Usuario.Location = new System.Drawing.Point(825, 0);
+            this.Usuario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Usuario.Location = new System.Drawing.Point(158, 0);
             this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(232, 69);
+            this.Usuario.Size = new System.Drawing.Size(899, 69);
             this.Usuario.TabIndex = 4;
             // 
             // label1
@@ -236,13 +234,95 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
+            // P_fondo
+            // 
+            this.P_fondo.Controls.Add(this.P_sistema);
+            this.P_fondo.Controls.Add(this.P_farmacia);
+            this.P_fondo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.P_fondo.Location = new System.Drawing.Point(158, 69);
+            this.P_fondo.Name = "P_fondo";
+            this.P_fondo.Size = new System.Drawing.Size(899, 597);
+            this.P_fondo.TabIndex = 5;
+            this.P_fondo.MouseEnter += new System.EventHandler(this.P_fondo_MouseEnter);
+            // 
+            // P_sistema
+            // 
+            this.P_sistema.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.P_sistema.BackColor = System.Drawing.Color.Teal;
+            this.P_sistema.Controls.Add(this.BT_usaurios);
+            this.P_sistema.Location = new System.Drawing.Point(0, 517);
+            this.P_sistema.Name = "P_sistema";
+            this.P_sistema.Size = new System.Drawing.Size(651, 38);
+            this.P_sistema.TabIndex = 46;
+            this.P_sistema.Visible = false;
+            // 
+            // BT_usaurios
+            // 
+            this.BT_usaurios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BT_usaurios.BackColor = System.Drawing.Color.Teal;
+            this.BT_usaurios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_usaurios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_usaurios.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BT_usaurios.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.BT_usaurios.FlatAppearance.BorderSize = 0;
+            this.BT_usaurios.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Info;
+            this.BT_usaurios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(113)))), ((int)(((byte)(69)))));
+            this.BT_usaurios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_usaurios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_usaurios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BT_usaurios.Image = global::SSISH.Properties.Resources.pharmacist__1_;
+            this.BT_usaurios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_usaurios.Location = new System.Drawing.Point(3, 3);
+            this.BT_usaurios.Name = "BT_usaurios";
+            this.BT_usaurios.Size = new System.Drawing.Size(133, 35);
+            this.BT_usaurios.TabIndex = 46;
+            this.BT_usaurios.Text = "   Usuarios";
+            this.BT_usaurios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BT_usaurios.UseVisualStyleBackColor = false;
+            this.BT_usaurios.Click += new System.EventHandler(this.BT_usaurios_Click);
+            // 
+            // P_farmacia
+            // 
+            this.P_farmacia.BackColor = System.Drawing.Color.Teal;
+            this.P_farmacia.Controls.Add(this.BT_nodispensado);
+            this.P_farmacia.Location = new System.Drawing.Point(0, 91);
+            this.P_farmacia.Name = "P_farmacia";
+            this.P_farmacia.Size = new System.Drawing.Size(651, 38);
+            this.P_farmacia.TabIndex = 45;
+            this.P_farmacia.Visible = false;
+            // 
+            // BT_nodispensado
+            // 
+            this.BT_nodispensado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BT_nodispensado.BackColor = System.Drawing.Color.Teal;
+            this.BT_nodispensado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_nodispensado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_nodispensado.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BT_nodispensado.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.BT_nodispensado.FlatAppearance.BorderSize = 0;
+            this.BT_nodispensado.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Info;
+            this.BT_nodispensado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(113)))), ((int)(((byte)(69)))));
+            this.BT_nodispensado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_nodispensado.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_nodispensado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BT_nodispensado.Image = global::SSISH.Properties.Resources.pharmacist__1_;
+            this.BT_nodispensado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_nodispensado.Location = new System.Drawing.Point(3, 3);
+            this.BT_nodispensado.Name = "BT_nodispensado";
+            this.BT_nodispensado.Size = new System.Drawing.Size(170, 35);
+            this.BT_nodispensado.TabIndex = 46;
+            this.BT_nodispensado.Text = "   NO Dispensado";
+            this.BT_nodispensado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BT_nodispensado.UseVisualStyleBackColor = false;
+            this.BT_nodispensado.Click += new System.EventHandler(this.BT_nodispensado_Click);
+            // 
             // sis_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1057, 666);
+            this.Controls.Add(this.P_fondo);
             this.Controls.Add(this.Usuario);
-            this.Controls.Add(this.P_farmacia);
             this.Controls.Add(this.P_menu);
             this.Name = "sis_principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -251,9 +331,11 @@
             this.P_menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PB_menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_logo)).EndInit();
-            this.P_farmacia.ResumeLayout(false);
             this.Usuario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.P_fondo.ResumeLayout(false);
+            this.P_sistema.ResumeLayout(false);
+            this.P_farmacia.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -264,13 +346,17 @@
         private System.Windows.Forms.Button BT_salir;
         private System.Windows.Forms.PictureBox PB_logo;
         private System.Windows.Forms.PictureBox PB_menu;
-        private System.Windows.Forms.FlowLayoutPanel P_farmacia;
         private System.Windows.Forms.Button BT_farmacia;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel Usuario;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LB_nombre;
+        private System.Windows.Forms.Button BT_sistema;
+        private System.Windows.Forms.Panel P_fondo;
+        private System.Windows.Forms.FlowLayoutPanel P_farmacia;
+        private System.Windows.Forms.Button BT_nodispensado;
+        private System.Windows.Forms.FlowLayoutPanel P_sistema;
+        private System.Windows.Forms.Button BT_usaurios;
     }
 }

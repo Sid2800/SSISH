@@ -39,10 +39,10 @@ namespace SSISH.Controles
             catch (Exception e) { MessageBox.Show(e.Message); }
         }
 
-        public M_user Buscar_usuario(int id)
+        public M_user Buscar_usuario(string id)
         {
             M_user.Existe = false;
-            string Qry = $"execute [dbo].[PC_USER_BUSCAR_XID] '{id}'";
+            string Qry = $"execute SSISH.dbo.PC_USUARIO_BUSCARXID '{id}'";
             try
             {
                 DataTable dt1 = new DataTable();
@@ -61,11 +61,13 @@ namespace SSISH.Controles
                     }
                     if (dt1.Rows.Count >= 1)
                     {
-                        usuario.Descripcion = dt1.Rows[0]["Descripcion"].ToString();
-                        usuario.Estado = (Boolean)dt1.Rows[0]["Estado"];
+                        usuario.Id_user = dt1.Rows[0]["id_user"].ToString();
+                        usuario.Identidad = dt1.Rows[0]["identidad"].ToString();
+                        usuario.Nombre = dt1.Rows[0]["Nombre"].ToString();
                         usuario.Contra = dt1.Rows[0]["Contraseña"].ToString();
-                        usuario.Identidad = dt1.Rows[0]["Identidad_usu"].ToString();
-                        usuario.Id_acc = (int)dt1.Rows[0]["Id_acc"];
+                        usuario.Id_depto = (int)dt1.Rows[0]["id_depto"];
+                        usuario.Depto = dt1.Rows[0]["descripcion"].ToString();
+                        usuario.Estado = (Boolean)dt1.Rows[0]["Estado"];
                         M_user.Existe = true;
 
                     }
@@ -76,31 +78,7 @@ namespace SSISH.Controles
 
         }
 
-        public Boolean Desactivar_usuario(int id)
-        {
-
-            Boolean desactivado = false;
-            try
-            {
-                using (SqlConnection sqlCon = new Conexion().CadenaConexionBD())
-                {
-                    sqlCon.Open();
-                    string Qry = $"execute [dbo].[PC_USER_DESACTIVAR] '{id}'";
-                    using (SqlCommand cmd = new SqlCommand(Qry, sqlCon))
-                    {
-                        cmd.ExecuteNonQuery();
-                        desactivado = true;
-                    }
-                    sqlCon.Close();
-                }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-                desactivado = false;
-            }
-            return desactivado;
-        }
+        
         
     }
 }
