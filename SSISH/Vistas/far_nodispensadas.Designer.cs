@@ -40,31 +40,32 @@
             this.PB_foto = new System.Windows.Forms.PictureBox();
             this.LB_siguiente = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.PB_sexo = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.TX_edad = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TX_direccion = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.TX_1nombre = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DT_inicio = new System.Windows.Forms.DateTimePicker();
             this.LB_nombre_med = new System.Windows.Forms.Label();
             this.TP_observaciones = new System.Windows.Forms.TabPage();
             this.TX_observaciones = new System.Windows.Forms.TextBox();
             this.TP_medicamentos = new System.Windows.Forms.TabPage();
-            this.DGV_diag = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.BT_agregar_diag = new System.Windows.Forms.Button();
             this.BT_eliminar_diag = new System.Windows.Forms.Button();
+            this.BT_agregar_diag = new System.Windows.Forms.Button();
+            this.DGV_diag = new System.Windows.Forms.DataGridView();
             this.TC_evaluacion = new System.Windows.Forms.TabControl();
             this.panel4 = new System.Windows.Forms.Panel();
             this.LB_modo = new System.Windows.Forms.Label();
-            this.BT_cancelar = new System.Windows.Forms.Button();
-            this.BT_guardar = new System.Windows.Forms.Button();
-            this.DT_inicio = new System.Windows.Forms.DateTimePicker();
+            this.BT_cerrar = new FontAwesome.Sharp.IconButton();
+            this.BT_guardar = new FontAwesome.Sharp.IconButton();
+            this.BT_agregar = new FontAwesome.Sharp.IconButton();
             this.Titulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_foto)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -72,8 +73,8 @@
             this.groupBox2.SuspendLayout();
             this.TP_observaciones.SuspendLayout();
             this.TP_medicamentos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_diag)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_diag)).BeginInit();
             this.TC_evaluacion.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             this.Titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
             this.Titulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Titulo.Controls.Add(this.BT_cerrar);
             this.Titulo.Controls.Add(this.label2);
             this.Titulo.Controls.Add(this.TX_cita);
             this.Titulo.Controls.Add(this.TX_ate);
@@ -115,7 +117,7 @@
             this.TX_cita.Location = new System.Drawing.Point(445, 18);
             this.TX_cita.Mask = "0000000000000";
             this.TX_cita.Name = "TX_cita";
-            this.TX_cita.Size = new System.Drawing.Size(183, 30);
+            this.TX_cita.Size = new System.Drawing.Size(161, 30);
             this.TX_cita.TabIndex = 0;
             // 
             // TX_ate
@@ -123,11 +125,11 @@
             this.TX_ate.BackColor = System.Drawing.Color.Ivory;
             this.TX_ate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TX_ate.Enabled = false;
-            this.TX_ate.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TX_ate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TX_ate.ForeColor = System.Drawing.Color.OliveDrab;
-            this.TX_ate.Location = new System.Drawing.Point(226, 11);
+            this.TX_ate.Location = new System.Drawing.Point(237, 22);
             this.TX_ate.Name = "TX_ate";
-            this.TX_ate.Size = new System.Drawing.Size(71, 35);
+            this.TX_ate.Size = new System.Drawing.Size(71, 29);
             this.TX_ate.TabIndex = 500;
             this.TX_ate.Text = "00000";
             this.TX_ate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -178,6 +180,15 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Datos Paciente";
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Enabled = false;
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12.5F);
+            this.maskedTextBox1.Location = new System.Drawing.Point(456, 46);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(153, 30);
+            this.maskedTextBox1.TabIndex = 117;
+            // 
             // PB_sexo
             // 
             this.PB_sexo.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -201,6 +212,16 @@
             this.label9.Size = new System.Drawing.Size(42, 20);
             this.label9.TabIndex = 116;
             this.label9.Text = "Sexo";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(455, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 20);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Exp";
             // 
             // label8
             // 
@@ -255,16 +276,6 @@
             this.label1.TabIndex = 109;
             this.label1.Text = "Nombre Completo";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(455, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 20);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Exp";
-            // 
             // TX_1nombre
             // 
             this.TX_1nombre.Enabled = false;
@@ -273,15 +284,6 @@
             this.TX_1nombre.Name = "TX_1nombre";
             this.TX_1nombre.Size = new System.Drawing.Size(430, 30);
             this.TX_1nombre.TabIndex = 26;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Enabled = false;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12.5F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(456, 46);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(153, 30);
-            this.maskedTextBox1.TabIndex = 117;
             // 
             // groupBox2
             // 
@@ -294,6 +296,17 @@
             this.groupBox2.Size = new System.Drawing.Size(657, 58);
             this.groupBox2.TabIndex = 136;
             this.groupBox2.TabStop = false;
+            // 
+            // DT_inicio
+            // 
+            this.DT_inicio.CalendarFont = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DT_inicio.Enabled = false;
+            this.DT_inicio.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DT_inicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DT_inicio.Location = new System.Drawing.Point(98, 19);
+            this.DT_inicio.Name = "DT_inicio";
+            this.DT_inicio.Size = new System.Drawing.Size(179, 27);
+            this.DT_inicio.TabIndex = 123;
             // 
             // LB_nombre_med
             // 
@@ -310,9 +323,9 @@
             // TP_observaciones
             // 
             this.TP_observaciones.Controls.Add(this.TX_observaciones);
-            this.TP_observaciones.Location = new System.Drawing.Point(4, 26);
+            this.TP_observaciones.Location = new System.Drawing.Point(4, 27);
             this.TP_observaciones.Name = "TP_observaciones";
-            this.TP_observaciones.Size = new System.Drawing.Size(653, 187);
+            this.TP_observaciones.Size = new System.Drawing.Size(653, 186);
             this.TP_observaciones.TabIndex = 3;
             this.TP_observaciones.Text = "Observaciones";
             this.TP_observaciones.UseVisualStyleBackColor = true;
@@ -324,7 +337,7 @@
             this.TX_observaciones.Location = new System.Drawing.Point(0, 0);
             this.TX_observaciones.Multiline = true;
             this.TX_observaciones.Name = "TX_observaciones";
-            this.TX_observaciones.Size = new System.Drawing.Size(653, 187);
+            this.TX_observaciones.Size = new System.Drawing.Size(653, 186);
             this.TX_observaciones.TabIndex = 142;
             // 
             // TP_medicamentos
@@ -333,12 +346,66 @@
             this.TP_medicamentos.Controls.Add(this.panel2);
             this.TP_medicamentos.Controls.Add(this.DGV_diag);
             this.TP_medicamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TP_medicamentos.Location = new System.Drawing.Point(4, 26);
+            this.TP_medicamentos.Location = new System.Drawing.Point(4, 27);
             this.TP_medicamentos.Name = "TP_medicamentos";
             this.TP_medicamentos.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_medicamentos.Size = new System.Drawing.Size(653, 187);
+            this.TP_medicamentos.Size = new System.Drawing.Size(653, 186);
             this.TP_medicamentos.TabIndex = 1;
             this.TP_medicamentos.Text = "Diagnostico";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.BT_eliminar_diag);
+            this.panel2.Controls.Add(this.BT_agregar_diag);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(605, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(45, 180);
+            this.panel2.TabIndex = 131;
+            // 
+            // BT_eliminar_diag
+            // 
+            this.BT_eliminar_diag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BT_eliminar_diag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
+            this.BT_eliminar_diag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_eliminar_diag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_eliminar_diag.Enabled = false;
+            this.BT_eliminar_diag.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.BT_eliminar_diag.FlatAppearance.BorderSize = 0;
+            this.BT_eliminar_diag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.BT_eliminar_diag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_eliminar_diag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_eliminar_diag.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BT_eliminar_diag.Image = global::SSISH.Properties.Resources.limpiar24;
+            this.BT_eliminar_diag.Location = new System.Drawing.Point(-2, 138);
+            this.BT_eliminar_diag.Name = "BT_eliminar_diag";
+            this.BT_eliminar_diag.Size = new System.Drawing.Size(47, 38);
+            this.BT_eliminar_diag.TabIndex = 19;
+            this.BT_eliminar_diag.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BT_eliminar_diag.UseVisualStyleBackColor = false;
+            // 
+            // BT_agregar_diag
+            // 
+            this.BT_agregar_diag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BT_agregar_diag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
+            this.BT_agregar_diag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_agregar_diag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_agregar_diag.Enabled = false;
+            this.BT_agregar_diag.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.BT_agregar_diag.FlatAppearance.BorderSize = 0;
+            this.BT_agregar_diag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.BT_agregar_diag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_agregar_diag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_agregar_diag.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BT_agregar_diag.Image = global::SSISH.Properties.Resources.Nuevo224;
+            this.BT_agregar_diag.Location = new System.Drawing.Point(-2, 99);
+            this.BT_agregar_diag.Name = "BT_agregar_diag";
+            this.BT_agregar_diag.Size = new System.Drawing.Size(47, 38);
+            this.BT_agregar_diag.TabIndex = 18;
+            this.BT_agregar_diag.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BT_agregar_diag.UseVisualStyleBackColor = false;
             // 
             // DGV_diag
             // 
@@ -393,69 +460,15 @@
             dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
             this.DGV_diag.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.DGV_diag.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_diag.Size = new System.Drawing.Size(647, 181);
+            this.DGV_diag.Size = new System.Drawing.Size(647, 180);
             this.DGV_diag.TabIndex = 130;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.BT_eliminar_diag);
-            this.panel2.Controls.Add(this.BT_agregar_diag);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(605, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(45, 181);
-            this.panel2.TabIndex = 131;
-            // 
-            // BT_agregar_diag
-            // 
-            this.BT_agregar_diag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BT_agregar_diag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
-            this.BT_agregar_diag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BT_agregar_diag.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BT_agregar_diag.Enabled = false;
-            this.BT_agregar_diag.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.BT_agregar_diag.FlatAppearance.BorderSize = 0;
-            this.BT_agregar_diag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.BT_agregar_diag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_agregar_diag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_agregar_diag.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BT_agregar_diag.Image = global::SSISH.Properties.Resources.Nuevo224;
-            this.BT_agregar_diag.Location = new System.Drawing.Point(-2, 100);
-            this.BT_agregar_diag.Name = "BT_agregar_diag";
-            this.BT_agregar_diag.Size = new System.Drawing.Size(47, 38);
-            this.BT_agregar_diag.TabIndex = 18;
-            this.BT_agregar_diag.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BT_agregar_diag.UseVisualStyleBackColor = false;
-            // 
-            // BT_eliminar_diag
-            // 
-            this.BT_eliminar_diag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BT_eliminar_diag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
-            this.BT_eliminar_diag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BT_eliminar_diag.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BT_eliminar_diag.Enabled = false;
-            this.BT_eliminar_diag.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.BT_eliminar_diag.FlatAppearance.BorderSize = 0;
-            this.BT_eliminar_diag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.BT_eliminar_diag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_eliminar_diag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_eliminar_diag.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BT_eliminar_diag.Image = global::SSISH.Properties.Resources.limpiar24;
-            this.BT_eliminar_diag.Location = new System.Drawing.Point(-2, 139);
-            this.BT_eliminar_diag.Name = "BT_eliminar_diag";
-            this.BT_eliminar_diag.Size = new System.Drawing.Size(47, 38);
-            this.BT_eliminar_diag.TabIndex = 19;
-            this.BT_eliminar_diag.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BT_eliminar_diag.UseVisualStyleBackColor = false;
             // 
             // TC_evaluacion
             // 
             this.TC_evaluacion.Controls.Add(this.TP_medicamentos);
             this.TC_evaluacion.Controls.Add(this.TP_observaciones);
             this.TC_evaluacion.Enabled = false;
-            this.TC_evaluacion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TC_evaluacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TC_evaluacion.Location = new System.Drawing.Point(7, 287);
             this.TC_evaluacion.Margin = new System.Windows.Forms.Padding(6);
             this.TC_evaluacion.Name = "TC_evaluacion";
@@ -467,13 +480,13 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.LB_modo);
-            this.panel4.Controls.Add(this.BT_cancelar);
             this.panel4.Controls.Add(this.BT_guardar);
+            this.panel4.Controls.Add(this.BT_agregar);
+            this.panel4.Controls.Add(this.LB_modo);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 530);
+            this.panel4.Location = new System.Drawing.Point(0, 525);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(674, 37);
+            this.panel4.Size = new System.Drawing.Size(674, 42);
             this.panel4.TabIndex = 137;
             // 
             // LB_modo
@@ -481,69 +494,81 @@
             this.LB_modo.BackColor = System.Drawing.Color.Transparent;
             this.LB_modo.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_modo.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.LB_modo.Location = new System.Drawing.Point(11, 5);
+            this.LB_modo.Location = new System.Drawing.Point(11, 11);
             this.LB_modo.Name = "LB_modo";
             this.LB_modo.Size = new System.Drawing.Size(128, 22);
             this.LB_modo.TabIndex = 114;
             this.LB_modo.Text = "########";
             // 
-            // BT_cancelar
+            // BT_cerrar
             // 
-            this.BT_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
-            this.BT_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BT_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BT_cancelar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BT_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.BT_cancelar.FlatAppearance.BorderSize = 0;
-            this.BT_cancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.BT_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.BT_cancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BT_cancelar.Image = global::SSISH.Properties.Resources.Cacelar24;
-            this.BT_cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_cancelar.Location = new System.Drawing.Point(446, 0);
-            this.BT_cancelar.Name = "BT_cancelar";
-            this.BT_cancelar.Size = new System.Drawing.Size(113, 35);
-            this.BT_cancelar.TabIndex = 55;
-            this.BT_cancelar.Text = "Cancelar";
-            this.BT_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BT_cancelar.UseVisualStyleBackColor = false;
+            this.BT_cerrar.BackColor = System.Drawing.Color.Transparent;
+            this.BT_cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_cerrar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BT_cerrar.FlatAppearance.BorderSize = 0;
+            this.BT_cerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.BT_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_cerrar.ForeColor = System.Drawing.Color.White;
+            this.BT_cerrar.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.BT_cerrar.IconColor = System.Drawing.Color.White;
+            this.BT_cerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BT_cerrar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BT_cerrar.Location = new System.Drawing.Point(632, 0);
+            this.BT_cerrar.Name = "BT_cerrar";
+            this.BT_cerrar.Size = new System.Drawing.Size(40, 62);
+            this.BT_cerrar.TabIndex = 501;
+            this.BT_cerrar.UseVisualStyleBackColor = false;
             // 
             // BT_guardar
             // 
             this.BT_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
-            this.BT_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BT_guardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_guardar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BT_guardar.Enabled = false;
-            this.BT_guardar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.BT_guardar.FlatAppearance.BorderSize = 0;
-            this.BT_guardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.BT_guardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
             this.BT_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.BT_guardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BT_guardar.Image = global::SSISH.Properties.Resources.guardar24;
-            this.BT_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_guardar.Location = new System.Drawing.Point(559, 0);
+            this.BT_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_guardar.ForeColor = System.Drawing.Color.White;
+            this.BT_guardar.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.BT_guardar.IconColor = System.Drawing.Color.White;
+            this.BT_guardar.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.BT_guardar.IconSize = 40;
+            this.BT_guardar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BT_guardar.Location = new System.Drawing.Point(420, 0);
             this.BT_guardar.Name = "BT_guardar";
-            this.BT_guardar.Size = new System.Drawing.Size(113, 35);
-            this.BT_guardar.TabIndex = 54;
+            this.BT_guardar.Size = new System.Drawing.Size(126, 40);
+            this.BT_guardar.TabIndex = 116;
             this.BT_guardar.Text = "Guardar";
             this.BT_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BT_guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.BT_guardar.UseVisualStyleBackColor = false;
             // 
-            // DT_inicio
+            // BT_agregar
             // 
-            this.DT_inicio.CalendarFont = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DT_inicio.Enabled = false;
-            this.DT_inicio.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DT_inicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DT_inicio.Location = new System.Drawing.Point(98, 19);
-            this.DT_inicio.Name = "DT_inicio";
-            this.DT_inicio.Size = new System.Drawing.Size(179, 27);
-            this.DT_inicio.TabIndex = 123;
+            this.BT_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(78)))), ((int)(((byte)(108)))));
+            this.BT_agregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_agregar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BT_agregar.FlatAppearance.BorderSize = 0;
+            this.BT_agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.BT_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_agregar.ForeColor = System.Drawing.Color.White;
+            this.BT_agregar.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.BT_agregar.IconColor = System.Drawing.Color.White;
+            this.BT_agregar.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.BT_agregar.IconSize = 40;
+            this.BT_agregar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BT_agregar.Location = new System.Drawing.Point(546, 0);
+            this.BT_agregar.Name = "BT_agregar";
+            this.BT_agregar.Size = new System.Drawing.Size(126, 40);
+            this.BT_agregar.TabIndex = 115;
+            this.BT_agregar.Text = "Cancelar";
+            this.BT_agregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BT_agregar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.BT_agregar.UseVisualStyleBackColor = false;
             // 
-            // far_nodispensadas
+            // Far_nodispensadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -553,7 +578,9 @@
             this.Controls.Add(this.TC_evaluacion);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.Titulo);
-            this.Name = "far_nodispensadas";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Far_nodispensadas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medicamentos no dispensados";
             this.Titulo.ResumeLayout(false);
             this.Titulo.PerformLayout();
@@ -565,8 +592,8 @@
             this.TP_observaciones.ResumeLayout(false);
             this.TP_observaciones.PerformLayout();
             this.TP_medicamentos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_diag)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_diag)).EndInit();
             this.TC_evaluacion.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -604,8 +631,9 @@
         private System.Windows.Forms.TabControl TC_evaluacion;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label LB_modo;
-        private System.Windows.Forms.Button BT_cancelar;
-        private System.Windows.Forms.Button BT_guardar;
         private System.Windows.Forms.DateTimePicker DT_inicio;
+        private FontAwesome.Sharp.IconButton BT_cerrar;
+        private FontAwesome.Sharp.IconButton BT_guardar;
+        private FontAwesome.Sharp.IconButton BT_agregar;
     }
 }

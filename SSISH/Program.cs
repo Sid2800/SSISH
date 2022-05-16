@@ -18,7 +18,7 @@ namespace SSISH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Usu_usu());
+            Application.Run(new sis_principal());
         }
     }
 }
