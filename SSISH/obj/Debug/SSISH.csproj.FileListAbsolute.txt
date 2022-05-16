@@ -35,3 +35,5 @@ D:\Escritorio\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.csproj.CoreCompileInputs.cac
 D:\Escritorio\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.csproj.CopyComplete
 D:\Escritorio\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.exe
 D:\Escritorio\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.pdb
+D:\Escritorio\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.Vistas.Usu_admin.resources
+D:\Escritorio\GIT\SSISH\SSISH\SSISH\obj\Debug\SSISH.Vistas.Usu_usu.resources

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SSISH.Vistas;
 
 namespace SSISH.Vistas
 {
@@ -52,12 +53,10 @@ namespace SSISH.Vistas
         {
             //Ocultar todo
             P_farmacia.Visible = false;
+            P_sistema.Visible = false;
         }
 
-        private void P_fondo_MouseEnter(object sender, EventArgs e)
-        {
-            Limpiar_paneles();
-        }
+     
 
         private void Sis_principal_MouseEnter(object sender, EventArgs e)
         {
@@ -67,6 +66,29 @@ namespace SSISH.Vistas
         private void PB_logo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void P_fondo_MouseEnter(object sender, EventArgs e)
+        {
+            Limpiar_paneles();
+        }
+
+        private void BT_sistema_MouseEnter(object sender, EventArgs e)
+        {
+            P_sistema.Visible = true;
+        }
+
+        private void BT_nodispensado_Click(object sender, EventArgs e)
+        {
+            Far_nodispensadas form = new Far_nodispensadas();
+            form.ShowDialog();
+            
+        }
+
+        private void BT_usaurios_Click(object sender, EventArgs e)
+        {
+            Usu_admin form = new Usu_admin();
+            form.ShowDialog();
         }
     }
 }

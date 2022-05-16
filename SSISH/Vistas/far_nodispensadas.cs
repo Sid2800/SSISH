@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SSISH.Vistas
 {
-    public partial class far_nodispensadas : Form
+    public partial class Far_nodispensadas : Form
     {
-        public far_nodispensadas()
+        public Far_nodispensadas()
         {
             InitializeComponent();
         }

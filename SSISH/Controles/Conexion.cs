@@ -17,6 +17,8 @@ namespace SSISH.Controles
             return sqlCon;
         }
 
+      
+
         public SqlConnection CadenaConexionBit()
         {
             string NombreConexion = "ConexionBIT";

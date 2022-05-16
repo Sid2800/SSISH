@@ -60,7 +60,7 @@
             this.BT_ingresar.Location = new System.Drawing.Point(42, 447);
             this.BT_ingresar.Name = "BT_ingresar";
             this.BT_ingresar.Size = new System.Drawing.Size(296, 49);
-            this.BT_ingresar.TabIndex = 51;
+            this.BT_ingresar.TabIndex = 4;
             this.BT_ingresar.Text = "Ingresar";
             this.BT_ingresar.UseVisualStyleBackColor = false;
             this.BT_ingresar.Click += new System.EventHandler(this.BT_ingresar_Click);
@@ -69,11 +69,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Trajan Pro", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Trajan Pro", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(112, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 46);
+            this.label1.Size = new System.Drawing.Size(140, 46);
             this.label1.TabIndex = 50;
             this.label1.Text = "SSISH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,7 +104,7 @@
             this.btncerrar.Location = new System.Drawing.Point(335, 0);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(45, 68);
-            this.btncerrar.TabIndex = 63;
+            this.btncerrar.TabIndex = 1;
             this.btncerrar.UseVisualStyleBackColor = false;
             this.btncerrar.Click += new System.EventHandler(this.Btncerrar_Click);
             // 
@@ -179,9 +179,10 @@
             this.LP_recuperar.Location = new System.Drawing.Point(116, 513);
             this.LP_recuperar.Name = "LP_recuperar";
             this.LP_recuperar.Size = new System.Drawing.Size(167, 19);
-            this.LP_recuperar.TabIndex = 59;
+            this.LP_recuperar.TabIndex = 5;
             this.LP_recuperar.TabStop = true;
             this.LP_recuperar.Text = "Recuperar Contraseña";
+            this.LP_recuperar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LP_recuperar_LinkClicked);
             // 
             // rjCircularPictureBox1
             // 
@@ -207,7 +208,7 @@
             this.TX_contrasenia.Location = new System.Drawing.Point(74, 367);
             this.TX_contrasenia.Name = "TX_contrasenia";
             this.TX_contrasenia.Size = new System.Drawing.Size(257, 24);
-            this.TX_contrasenia.TabIndex = 61;
+            this.TX_contrasenia.TabIndex = 3;
             this.TX_contrasenia.Text = "Contraseña";
             this.TX_contrasenia.Enter += new System.EventHandler(this.TX_contrasenia_Enter);
             this.TX_contrasenia.Leave += new System.EventHandler(this.TX_contrasenia_Leave);
@@ -217,10 +218,10 @@
             this.TX_usuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TX_usuario.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
             this.TX_usuario.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.TX_usuario.Location = new System.Drawing.Point(74, 288);
+            this.TX_usuario.Location = new System.Drawing.Point(74, 266);
             this.TX_usuario.Name = "TX_usuario";
             this.TX_usuario.Size = new System.Drawing.Size(257, 24);
-            this.TX_usuario.TabIndex = 62;
+            this.TX_usuario.TabIndex = 2;
             this.TX_usuario.Text = "Usuario";
             this.TX_usuario.Enter += new System.EventHandler(this.TX_usuario_Enter);
             this.TX_usuario.Leave += new System.EventHandler(this.TX_usuario_Leave);

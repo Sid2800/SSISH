@@ -16,7 +16,9 @@ namespace SSISH.Vistas
     public partial class sis_login : Form
     {
         M_user usuario = new M_user();
- 
+
+        readonly C_sesion controlS = new C_sesion();
+
         readonly C_user control = new C_user();
 
         public sis_login()
@@ -30,7 +32,7 @@ namespace SSISH.Vistas
         Boolean Comprobar_lleno()
         {
             Boolean lleno;
-            if (string.IsNullOrEmpty(TX_usuario.Text)
+            if (string.IsNullOrEmpty(TX_usuario.Text )
                 || string.IsNullOrEmpty(TX_contrasenia.Text)
 
                 )
@@ -73,9 +75,10 @@ namespace SSISH.Vistas
         {
             if (string.IsNullOrEmpty(TX_contrasenia.Text))
             {
+                TX_contrasenia.UseSystemPasswordChar = false;
                 TX_contrasenia.Text = "Contraseña";
                 TX_contrasenia.ForeColor = Color.DarkGray;
-                TX_contrasenia.UseSystemPasswordChar = false;
+                
             }
         }
 
@@ -106,10 +109,7 @@ namespace SSISH.Vistas
                             {
                                 MessageBox.Show("Te has logeado correctamente, Bienvenido al sistema ",
                                        "SSISH", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                M_user.Usuario_activo = usuario.Id_user;
-                                this.Hide();
-                                sis_principal principal = new sis_principal();
-                                principal.Show();
+                                Inicio_sesion();
                             }
                             else
                             {
@@ -157,6 +157,36 @@ namespace SSISH.Vistas
             TX_contrasenia.UseSystemPasswordChar = false;
         }
 
+        /// llamado y regsitro de secion
+        void Inicio_sesion()
+        {
+            this.Hide();
+            M_user.Usuario_activo = usuario.Id_user;
+            // Modelamos la sesion de inicio
+            M_sesion sesion = new M_sesion
+            {
+                Inicio = DateTime.Now.ToString("hh:mm:ss"),
+                Fin = "0",
+                Id_user = usuario.Id_user,
+                Dia = DateTime.Now.Date
+            };
+            controlS.Inicio_sesion(sesion);
 
+            sesion = controlS.Buscar_sesion_recienagregada();
+
+            M_sesion.Sesion_activa = sesion.Id_sesion;
+
+
+            //llamado al formulario
+            sis_principal principal = new sis_principal();
+            principal.Show();
+        
+        
+        }
+
+        private void LP_recuperar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            controlS.Cerrar_Sesion(1, DateTime.Now.ToString("hh:mm:ss"));
+        }
     }
 }
